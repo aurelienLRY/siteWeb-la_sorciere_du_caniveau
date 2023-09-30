@@ -1,0 +1,22 @@
+@use "./main.scss";
+
+header {
+  margin-top: 5rem;
+  svg {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+
+.section {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 5rem;
+  gap: 2rem;
+  
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+}

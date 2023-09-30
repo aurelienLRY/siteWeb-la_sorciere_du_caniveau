@@ -1,0 +1,73 @@
+@use "sass:color";
+@use "../abstract/variables" as var;
+
+* {
+  font-size: var.$font-base;
+  font-family: var.$font-family;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: lighten($color: #000000, $amount: 55%);
+
+  margin: 0;
+}
+
+body {
+  margin: 0;
+
+  background-color: var.$background-1;
+  &::after{
+    content: "";
+    position: fixed;
+    rotate: 140deg;
+           right: -2em;
+           bottom: -5em;
+            width: 60%;
+            height: 50%; 
+            background-image: url(../img/background/faugere.svg);
+            background-size: contain; /* Ajuster l'image à la hauteur maximale tout en conservant les proportions */
+            background-repeat: no-repeat; /* Pour éviter la répétition de l'image */
+            background-position: left center; /* Positionner l'image à gauche et centrer verticalement */
+            opacity: 0.1; /* Ajustez l'opacité selon vos préférences */
+            z-index: -1; /* Placer l'image derrière le contenu */
+  }
+}
+ main{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+ }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Bubblegum Sans";
+  color: #000000;
+}
+h1{
+    
+    font-size: var.$font-base * 2;
+}
+
+.section {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.flex{
+    display: flex
+}
+
+.justify-content-center{
+    display: flex;
+    justify-content: center;
+}
+.align-items-center{
+    display: flex;
+    align-items: center;
+}

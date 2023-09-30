@@ -1,0 +1,1 @@
+./assets/sass/dart-sass/sass assets/sass/home.scss:assets/css/index.css  --watch

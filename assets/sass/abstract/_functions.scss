@@ -1,0 +1,26 @@
+@use "sass:math";
+@use "variables" as var;
+//   supprime l'unité
+@function strip-unit($number) {
+  @if type-of($number) == "number" and not unitless($number) {
+    @return math.div($number, ($number * 0 + 1));
+  }
+  @return $number;
+}
+
+// génere un rem en fonction d'une valeur de pixel
+@function rem($size, $base: var.$font-base) {
+  $size-value: strip-unit($size);
+  $base-value: strip-unit($base);
+  $rem-value: calc($size-value / $base-value);
+  @return #{$rem-value}rem;
+}
+
+@function em($size, $base: var.$font-base) {
+  $size-value: strip-unit($size);
+  $base-value: strip-unit($base);
+  $rem-value: calc($size-value / $base-value);
+  @return #{$rem-value}em;
+}
+
+
