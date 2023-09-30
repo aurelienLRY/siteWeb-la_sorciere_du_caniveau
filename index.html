@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./assets/css/index.css">
-    <title>Document</title>
+    <title>La sorcière du caniveau</title>
 </head>
 
 <body>
@@ -36,7 +36,7 @@
                 <p>Plongez dans cet univers fascinant où chaque bijou raconte une histoire secrète, où chaque gemme
                     cache un fragment de légende, prêt à être révélé à ceux qui ont le courage de l'explorer.</p>
             </article>
-            <a href="" class="btn"> Découvrir</a>
+            <a href="./pages/accueil.html" class="btn" id="vibratebtn"> Découvrir</a>
         </section>
     </main>
     <footer>
@@ -44,5 +44,16 @@
     </footer>
 
 </body>
+<script>
+    document.getElementById("vibratebtn").addEventListener("click", function() {
+  // Vérifier si la fonction de vibration est disponible dans le navigateur
+  if ("vibrate" in navigator) {
+    // Faites vibrer le téléphone pendant 1 seconde (1000 ms)
+    navigator.vibrate(1000);
+  } else {
+    console.log("La fonction de vibration n'est pas prise en charge dans ce navigateur.");
+  }
+});
+</script>
 
 </html>
