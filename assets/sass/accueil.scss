@@ -1,0 +1,36 @@
+@use "main";
+@use "./components/card-shop";
+@use "./components/grid-insta";
+
+#about {
+text-align: justify;
+
+}
+
+.product {
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+gap: 1.5em;
+width: 100%;
+max-width: 800px;
+
+  &_img {
+    width: 40%;
+    min-width: 200px;
+    height: auto;
+
+  }
+
+  &_content{    
+    display: flex;
+    box-sizing: border-box;
+
+  
+      flex-direction: column;
+      flex-wrap: nowrap;
+   justify-content: center;
+   gap: 0.3em;
+
+  }
+}

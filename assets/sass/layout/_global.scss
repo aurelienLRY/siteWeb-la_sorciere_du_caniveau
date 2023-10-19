@@ -16,26 +16,29 @@ body {
   margin: 0;
 
   background-color: var.$background-1;
-  &::after{
+  &::after {
     content: "";
     position: fixed;
     rotate: 140deg;
-           right: -2em;
-           bottom: -5em;
-            width: 60%;
-            height: 50%; 
-            background-image: url(../img/background/faugere.svg);
-            background-size: contain; /* Ajuster l'image à la hauteur maximale tout en conservant les proportions */
-            background-repeat: no-repeat; /* Pour éviter la répétition de l'image */
-            background-position: left center; /* Positionner l'image à gauche et centrer verticalement */
-            opacity: 0.1; /* Ajustez l'opacité selon vos préférences */
-            z-index: -1; /* Placer l'image derrière le contenu */
+    right: -2em;
+    bottom: -5em;
+    width: 60%;
+    height: 50%;
+    background-image: url(../img/background/faugere.svg);
+    background-size: contain; /* Ajuster l'image à la hauteur maximale tout en conservant les proportions */
+    background-repeat: no-repeat; /* Pour éviter la répétition de l'image */
+    background-position: left center; /* Positionner l'image à gauche et centrer verticalement */
+    opacity: 0.1; /* Ajustez l'opacité selon vos préférences */
+    z-index: -1; /* Placer l'image derrière le contenu */
   }
 }
- main{
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
- }
+main {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
 
 h1,
 h2,
@@ -46,9 +49,14 @@ h6 {
   font-family: "Bubblegum Sans";
   color: #000000;
 }
-h1{
-    
-    font-size: var.$font-base * 2;
+h1 {
+  font-size: var.$font-base * 2;
+}
+h2 {
+  font-size: var.$font-base * 1.5;
+}
+h3 {
+  font-size: var.$font-base * 1.2;
 }
 
 .section {
@@ -57,17 +65,30 @@ h1{
   flex-direction: column;
   justify-content: center;
   gap: 15px;
+  text-align: center;
 }
 
-.flex{
-    display: flex
+.flex {
+  display: flex;
 }
 
-.justify-content-center{
-    display: flex;
-    justify-content: center;
+.justify-content-center {
+  display: flex;
+  justify-content: center;
 }
-.align-items-center{
-    display: flex;
-    align-items: center;
+.align-items-center {
+  display: flex;
+  align-items: center;
+}
+
+.contener{
+ min-width: 300px;
+ width: 100%;
+ max-width: 540px;
+
+}
+
+.text-justify {
+ text-align: justify;
+
 }

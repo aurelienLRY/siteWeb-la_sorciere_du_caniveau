@@ -1,1 +1,1 @@
-./assets/sass/dart-sass/sass assets/sass/home.scss:assets/css/index.css  --watch
+./assets/sass/dart-sass/sass assets/sass/home.scss:assets/css/index.css   assets/sass/accueil.scss:assets/css/accueil.css  --watch

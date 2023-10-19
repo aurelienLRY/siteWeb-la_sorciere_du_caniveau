@@ -1,20 +1,16 @@
 @use'../abstract/variables'as var;
 
 header {
-  //style
-background-color: var.$background-1;
-
 //comportement
 display: flex;
 justify-content: center;
-margin-top: 1.5rem;
+margin-top: 0.5rem;
+margin-bottom: 2rem;
 
 
 svg {
-  width: 3em;
-  height: 3em;
+  width: 4em;
+  height: 4em;
 }
-
-
 }
 
